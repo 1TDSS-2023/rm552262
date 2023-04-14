@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.8%;
+
+}
+
 .cabecalho{
     display: flex;
     justify-content: space-between;
@@ -15,32 +20,32 @@
 
 .cabecalho nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 100%;
 }
 
 .cabecalho img{
-    width: 40%;
-    max-width: 40%;
+    width: 30%;
+    max-width: 30%;
     display: block;
+
 }
 
 .cabecalho a{
     text-decoration: none;
-    font-size: 4em;
+    font-size: 4rem;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500; 
+    font-weight: 700; 
     color: #fff;
-    padding: 20% 0;
+    padding: 20% 00;
     text-align: center;
 }
 
 .cabecalho a:hover{
     background-color: #fff;
     color: #000000;
-
 }
 
 .conteudo img{
@@ -59,11 +64,55 @@
 .conteudo > div{
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 200px;
+    flex-basis: 300px;
+}
+
+
+body{
+    font-size: 10px;
 }
 
 .tit-sec{
     text-align: center;
-    margin: 2%;
-    font-size: 2em;
+    margin: 2% 0;
+    font-size: 3em;
 }
+
+.rodape{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5% 0 0 0;
+
+}
+
+.rodape h2{
+    flex-grow: 1;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #d9d9d9;
+}
+
+.rodape nav{
+    flex-grow: 6;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+
+}
+
+.rodape img{
+    display: block;
+    width: 9%;
+    max-width: 9%;
+    margin: 0 auto;
+
+}
+
+.rodape a{
+    display: block;
+    flex-grow: 1;
+    background-color: #d9d9d9;
+
+}
+
