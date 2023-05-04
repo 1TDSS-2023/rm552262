@@ -51,3 +51,10 @@ this.setAttribute("style", `background-color: rgb(${r},${g},${b});`);
 
 
 });
+
+/* <h2 class="tit-sec>Seção de Fotos</h2" */
+
+const h2Elemnt = document.querySelector("class");
+console.log(h2Elemnt);
+
+//querySelectorAll()
