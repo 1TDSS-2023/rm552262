@@ -108,18 +108,41 @@
 //     });
 // })
 
-let nr1 = [1,2,3,4,5,];
-let nr2 = [6,7,8,9,10];
-console.log(nr1);
-console.log(nr2);
+// let nr1 = [1,2,3,4,5,];
+// let nr2 = [6,7,8,9,10];
+// console.log(nr1);
+// console.log(nr2);
 
-//Concatenando arrays em um novo array com o operador SPREAD( ... );
-let nr3 = [...nr1, ...nr2];
-console.log("NOVO ARRAY: " + nr3);
+// //Concatenando arrays em um novo array com o operador SPREAD( ... );
+// let nr3 = [...nr1, ...nr2];
+// console.log("NOVO ARRAY: " + nr3);
 
-//Imprimir o novo array com forEach
-nr3.forEach((nr)=>{
-   // nr.forEach((n)=>{
-        console.log("ITENS NO NOVO ARRAY: " + nr);
-   // });
-})
+// //Imprimir o novo array com forEach
+// nr3.forEach((nr)=>{
+//    // nr.forEach((n)=>{
+//         console.log("ITENS NO NOVO ARRAY: " + nr);
+//    // });
+// })
+
+// const imgElements = [...document.getElementsByTagName("img")];
+// /*for (let index = 0; index < imgElements.length; index++) {
+//     console.log(imgElements[index]);
+// }*/
+
+// //const imgElementsArray = {...imgElements};
+// //console.log(imgElementsArray);
+
+// imgElements.forEach((img)=>{
+//     img.setAttribute("width", "10%");
+// });
+
+
+const elements = [...document.querySelectorAll(".teste")];
+//console.log(elements);
+
+
+elements.forEach( (el)=>{
+    if(el.tagName.toLowerCase() == "img"){
+        console.log(el);
+    }    
+});
