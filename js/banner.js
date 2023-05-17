@@ -40,19 +40,16 @@ mudaBanner();
 function luz() {
     
     const imgLampada = document.querySelector(".conteudo img");
-    const botaLigaDesliga = document.querySelector("meu-botao")
-
+    const botaLigaDesliga = document.querySelector("#meu-botao");
 
     if(imgLampada.alt == "Lampada desligada"){
-        imgLampada.Lampada.alt = "Lampada ligada"
-        imgLampada.src = "./img/pic_bulbon.gif"
-        botaLigaDesliga.textContent = "DESLIGAR"
+        imgLampada.alt = "Lampada ligada";
+        imgLampada.src = "./img/pic_bulbon.gif";
+        botaLigaDesliga.textContent = "DESLIGAR";
     }else{
-        mgLampada.Lampada.alt = "Lampada desligada"
-        imgLampada.src = "./img/pic_bulboff.gif"
-        botaLigaDesliga.textContent = "LIGAR"
+        imgLampada.alt = "Lampada desligada";
+        imgLampada.src = "./img/pic_bulboff.gif";
+        botaLigaDesliga.textContent = "LIGAR";
     }
-
-    imgLampada.src
 
 }

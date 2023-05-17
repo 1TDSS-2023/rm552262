@@ -55,10 +55,10 @@
 // //Verficando o tamanho do array através da propriedade length.
 // console.log(`O tamanho do Array é : ${frutas.length}`);
 
-// //Inserindo um item ao final do array com o método push(nomeIten);
+// //Inserindo um item ao final do array com o método push(nomeitem);
 // frutas.push("pêssego");
 // console.log(frutas)
-// //Inserindo um item no início do array com o método unshift(nomeIten);
+// //Inserindo um item no início do array com o método unshift(nomeitem);
 // frutas.unshift("kiwi");
 // console.log(frutas);
 
@@ -69,73 +69,63 @@
 // frutas.shift();
 // console.log(frutas);
 
-// //localizando um item no array com o método indexOf(nomeItem);
-// //obs: o metodo indexOf(nomeItem) retorna o indice do item procurado;
-// /*let indice = indexOf("uva");
-// console.log(`indice do item buscado ${indice}`);
-// console.log(`Elemento buscado:  ${indice[indice]}`);*/
+// //Localizando um item no array com o método indexOf(nomeitem);
+// //Obs: O método indexOf(nomeitem) retorna o indice do item.
+// // let indice = frutas.indexOf("uva");
+// // console.log(`Indice do item buscado ${indice}`);
+// // console.log(`Elemento buscado : ${frutas[indice]}`);
 
-// //Removendo um item do array com o metodo splice -> esse metodo recebe dois parametros: splice(indice do item, qtd de vezes que o indice sera removido)
-// //obs: ultilize o metodo indexOf(nomeItem) para descobrir o indice do item.
+// //Removendo um item do array com o método splice(índice do item, qtd de vezes que o índice será removido!)
+// //Obs: Utilize o método indexOf(nomeItem) para descobrir o índice do item.
 // let indice = frutas.indexOf("amora");
-// console.log(`Elemento no indice antes da remoção :  ${frutas[indice]}`);
-// frutas.splice(indice, 1);
+// console.log(`Elemento no índice antes da remoção : ${frutas[indice]}`);
+// frutas.splice(indice,1);
 // console.log(frutas);
-// console.log(`Elemento no indice após a remoção :  ${frutas[indice]}`);
+// console.log(`Elemento no índice após a remoção : ${frutas[indice]}`);
 
-// //Impressao de aray em tabela
+// //Impressão do aray em tabela
 // console.table(frutas);
-// //arrow function: função de callback, não contextualizada
+
 // frutas.forEach( (fruta)=>{
-//     console.log("FRUTA DA VEZ: " + fruta);
+//     console.log("FRUTA DA VEZ : " + fruta);
 // } );
 
-//concatenação de aray's
-//declarando duas aray's
-// let nr1 = [1,2,3,4,5,];
+// let nr1 = [1,2,3,4,5];
 // let nr2 = [6,7,8,9,10];
-// console.log(nr1);
-// console.log(nr2);
-
+// console.log("ARRAY 1 : " + nr1);
+// console.log("ARRAY 2 : " + nr2);
 // //Concatenando arrays em um novo array.
-// let nr3 = [nr1, nr2];
-// console.log("NOVO ARRAY: " + nr3);
-
-// //Imprimir o novo array com forEach
+// let nr3 = [nr1,nr2];
+// console.log("NOVO ARRAY : " + nr3);
+// //Imprimindo o novo array com forEach
 // nr3.forEach((nr)=>{
 //     nr.forEach((n)=>{
-//         console.log("ITENS NO NOVO ARRAY: " + n);
+//         console.log("ITENS DO NOVO ARRAY : " + n);
 //     });
-// })
-
-// let nr1 = [1,2,3,4,5,];
+// });
+// let nr1 = [1,2,3,4,5];
 // let nr2 = [6,7,8,9,10];
-// console.log(nr1);
-// console.log(nr2);
-
-// //Concatenando arrays em um novo array com o operador SPREAD( ... );
-// let nr3 = [...nr1, ...nr2];
-// console.log("NOVO ARRAY: " + nr3);
-
-// //Imprimir o novo array com forEach
+// console.log("ARRAY 1 : " + nr1);
+// console.log("ARRAY 2 : " + nr2);
+// //Concatenando arrays em um novo array com operador SPREAD( ... );
+// let nr3 = [...nr1,...nr2];
+// console.log("NOVO ARRAY : " + nr3);
+// //Imprimindo o novo array com forEach
 // nr3.forEach((nr)=>{
-//    // nr.forEach((n)=>{
-//         console.log("ITENS NO NOVO ARRAY: " + nr);
-//    // });
-// })
-
-// const imgElements = [...document.getElementsByTagName("img")];
-// /*for (let index = 0; index < imgElements.length; index++) {
-//     console.log(imgElements[index]);
-// }*/
-
-// //const imgElementsArray = {...imgElements};
-// //console.log(imgElementsArray);
-
-// imgElements.forEach((img)=>{
-//     img.setAttribute("width", "10%");
+//     // nr.forEach((n)=>{
+//         console.log("ITENS DO NOVO ARRAY : " + nr);
+//     // });
 // });
 
+// const imgElements = [...document.getElementsByTagName("img")];
+// // for (let index = 0; index < imgElements.length; index++) {
+// //     console.log(imgElements[index].alt);
+// // }
+// // const imgElementsArray = [...imgElements];
+
+// imgElements.forEach((img)=>{
+//     img.setAttribute("width","10%");
+// });
 
 const elements = [...document.querySelectorAll(".teste")];
 //console.log(elements);
@@ -146,3 +136,11 @@ elements.forEach( (el)=>{
         console.log(el);
     }    
 });
+
+/* <h2 class="tit-sec">Seçao de Fotos</h2> */
+
+const h2Element = document.querySelector("#meu-btn");
+
+console.log(h2Element);
+
+//querySelectorAll()
